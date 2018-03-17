@@ -30,6 +30,12 @@ class oemg(object):
     missingattr =lambda a,b :AttributeError("'%s' object has no attribute '%s'"                 %(type(a).__name__,b))
     missingindex=lambda a   :ValueError(" %s is not in list"                                     %a)
 
+def repeat_iterable(it,t):
+    r=range(t)
+    for v in it:
+        for t in r:
+            yield v
+            
 class removemeta(type):
     def __new__(meta,name,bases,values):
         hide={'__hide__','__overhide__'}
