@@ -3,31 +3,7 @@ from os.path import splitext
 from PIL import Image as PIL
 from base64 import b64encode
 from io import BytesIO
-from types import FunctionType as function, MethodType as method
-
-def iterable(v):
-    return hasattr(v,'__iter__') or (isinstance(v,(function,method)) and v.__code__.co_flags&32)
-
-class oemg(object):
-    '''operand error message generator'''
-    __add__     =lambda a,b :TypeError("unsupported operand type(s) for +: '%s' and '%s'"        %(type(a).__name__,type(b).__name__))
-    __radd__    =lambda a,b :TypeError("unsupported operand type(s) for +: '%s' and '%s'"        %(type(b).__name__,type(a).__name__))
-    __iadd__    =lambda a,b :TypeError("unsupported operand type(s) for +=: '%s' and '%s'"       %(type(a).__name__,type(b).__name__))
-    __sub__     =lambda a,b :TypeError("unsupported operand type(s) for -: '%s' and '%s'"        %(type(a).__name__,type(b).__name__))
-    __rsub__    =lambda a,b :TypeError("unsupported operand type(s) for -: '%s' and '%s'"        %(type(b).__name__,type(a).__name__))
-    __isub__    =lambda a,b :TypeError("unsupported operand type(s) for -=: '%s' and '%s'"       %(type(a).__name__,type(b).__name__))
-    __eq__      =lambda a,b :TypeError("'==' not supported between instances of '%s' and '%s'"   %(type(a).__name__,type(b).__name__))
-    __gt__      =lambda a,b :TypeError("'>' not supported between instances of '%s' and '%s'"    %(type(a).__name__,type(b).__name__))
-    __st__      =lambda a,b :TypeError("'<' not supported between instances of '%s' and '%s'"    %(type(a).__name__,type(b).__name__))
-    __ge__      =lambda a,b :TypeError("'>=' not supported between instances of '%s' and '%s'"   %(type(a).__name__,type(b).__name__))
-    __se__      =lambda a,b :TypeError("'<=' not supported between instances of '%s' and '%s'"   %(type(a).__name__,type(b).__name__))
-    __mul__     =lambda a,b :TypeError("unsupported operand type(s) for *: '%s' and '%s'"        %(type(a).__name__,type(b).__name__))
-    __rmul__    =lambda a,b :TypeError("unsupported operand type(s) for *: '%s' and '%s'"        %(type(b).__name__,type(a).__name__))
-    __imul__    =lambda a,b :TypeError("unsupported operand type(s) for *=: '%s' and '%s'"       %(type(a).__name__,type(b).__name__))
-    
-    __reversed__=lambda     :TypeError("'reversed' object is not reversible")
-    missingattr =lambda a,b :AttributeError("'%s' object has no attribute '%s'"                 %(type(a).__name__,b))
-    missingindex=lambda a   :ValueError(" %s is not in list"                                     %a)
+from types import MethodType as method
 
 def repeat_iterable(it,t):
     r=range(t)
@@ -239,7 +215,7 @@ class sortedlist(list,metaclass=removemeta):
         t=len(s)
         if t<2:
             if t==0:
-                raise oemg.missingindex(v)
+                raise ValueError("%s is not in list"%v)
             elif s[0]==v:
                 return 0
         else:
@@ -263,7 +239,7 @@ class sortedlist(list,metaclass=removemeta):
                         h=(b+t)>>1
             if s[t]==v:
                 return t
-        raise oemg.missingindex(v)
+        raise ValueError("%s is not in list"%v)
     def relativeindex(s,v):
         t=len(s)
         b=-1
