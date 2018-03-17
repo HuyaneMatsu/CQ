@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from os.path import splitext
-from itertools import repeat
 from PIL import Image as PIL
 from base64 import b64encode
 from io import BytesIO
