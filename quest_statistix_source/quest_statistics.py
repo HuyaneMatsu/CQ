@@ -80,11 +80,11 @@ class unit(req_base):
                 re.append(p)
         return re
 
-unit('goblin warrior',{'S2-E1-N-1-1':4,'S2-E1-N-1-2':2,'S2-E1-N-1-3':2}) #S2-E1-N-1-4/S2-E1-N-1-5 stage has 0
-unit('goblin archer',{'S2-E1-N-1-1':6,'S2-E1-N-1-2':4,'S2-E1-N-1-4':3,'S2-E1-N-1-5':2}) #S2-E1-N-1-3 has 0
+unit('goblin warrior',{'S2-E1-N-1-1':4,'S2-E1-N-1-2':2,'S2-E1-N-1-3':2})
+unit('goblin archer',{'S2-E1-N-1-1':6,'S2-E1-N-1-2':4,'S2-E1-N-1-4':3,'S2-E1-N-1-5':2})
 unit('mini ogre',{'S2-E1-N-1-1':1,'S2-E1-N-1-2':6,'S2-E1-N-1-3':4,'S2-E1-N-1-4':2,'S2-E1-N-1-5':6})
-unit('goblin catapult',{'S2-E1-N-1-2':1,'S2-E1-N-1-3':4,'S2-E1-N-1-4':2,'S2-E1-N-1-5':5}) #S2-E1-N-1-1 has 0
-unit('goblin champion',{'S2-E1-N-1-4':2,'S2-E1-N-1-5':1}) #S2-E1-N-1-1/S2-E1-N-1-2/S2-E1-N-1-3 has 0
+unit('goblin catapult',{'S2-E1-N-1-2':1,'S2-E1-N-1-3':4,'S2-E1-N-1-4':2,'S2-E1-N-1-5':5})
+unit('goblin champion',{'S2-E1-N-1-4':2,'S2-E1-N-1-5':1})
 
 unit('aggressive small ogre',{'S2-E1-N-1-1':1},boss=True)
 unit('aggressive goblin catapult',{'S2-E1-N-1-2':1},boss=True)
@@ -96,7 +96,7 @@ unit('goblin chief',{'S2-E1-N-1-5':1},boss=True)
 unit('red shadow rose charger',{'S2-E1-N-2-1':4,'S2-E1-N-2-2':8,'S2-E1-N-2-6':4})
 unit('red shadow rose marksman',{'S2-E1-N-2-1':3,'S2-E1-N-2-2':2,'S2-E1-N-2-6':7})
 unit('red shadow rose cavalry',{'S2-E1-N-2-6':2})
-unit('blue shadow rose marksman',{'S2-E1-N-2-3':3,'S2-E1-N-2-4':5}) #S2-E1-N-2-5 has 0
+unit('blue shadow rose marksman',{'S2-E1-N-2-3':3,'S2-E1-N-2-4':5})
 unit('blue shadow rose charger',{'S2-E1-N-2-3':2,'S2-E1-N-2-4':4})
 unit('blue shadow rose cavalry',{'S2-E1-N-2-3':2,'S2-E1-N-2-4':1})
 unit('yellow shadow rose cavalry',{'S2-E1-N-2-5':3})
@@ -108,7 +108,7 @@ unit('blue chaos shadowdemon',{'S2-E1-N-2-7':2,})
 unit('blue fury shadowdemon',{'S2-E1-N-2-7':3,})
 unit('yellow chaos shadowdemon',{'S2-E1-N-2-8':2,'S2-E1-N-2-9':1,'S2-E1-N-2-10':1})
 unit('yellow fury shadowdemon',{'S2-E1-N-2-8':2,'S2-E1-N-2-9':1,'S2-E1-N-2-10':1})
-unit('red chaos shadowdemon',{'S2-E1-N-2-9':1,'S2-E1-N-2-10':2,'S2-E1-N-4-2':2,'S2-E1-N-4-3':1,'S2-E1-N-4-4':3,'S2-E1-N-4-5':4})#S2-E1-N-4-2 has 0
+unit('red chaos shadowdemon',{'S2-E1-N-2-9':1,'S2-E1-N-2-10':2,'S2-E1-N-4-2':2,'S2-E1-N-4-3':1,'S2-E1-N-4-4':3,'S2-E1-N-4-5':4})
 unit('red fury shadowdemon',{'S2-E1-N-2-9':1,'S2-E1-N-2-10':2,'S2-E1-N-4-2':1,'S2-E1-N-4-5':2})
 
 
@@ -126,12 +126,12 @@ unit('hybrid shadowdemon',{'S2-E1-N-2-10':1},boss=True)
 
 
 
-unit('warrat',{'S2-E1-N-3-1':6,'S2-E1-N-3-2':6,'S2-E1-N-3-3':4,'S2-E1-N-3-6':10,'S2-E1-N-3-8':8}) #S2-E1-N-3-4/S2-E1-N-3-5/S2-E1-N-3-7/S2-E1-N-3-9/S2-E1-N-3-10 has 0
-unit('huntrat',{'S2-E1-N-3-1':5,'S2-E1-N-3-2':2,'S2-E1-N-3-4':2,'S2-E1-N-3-5':2,'S2-E1-N-3-6':6}) #S2-E1-N-3-3/S2-E1-N-3-7/S2-E1-N-3-8/S2-E1-N-3-9/S2-E1-N-3-10 has 0
-unit('bigrat',{'S2-E1-N-3-5':3,'S2-E1-N-3-7':1,'S2-E1-N-3-8':10,'S2-E1-N-3-9':4,'S2-E1-N-3-10':5})#S2-E1-N-3-1/S2-E1-N-3-2/S2-E1-N-3-3 has 0
-unit('bombrat',{'S2-E1-N-3-6':5,'S2-E1-N-3-8':6,'S2-E1-N-3-9':3,'S2-E1-N-3-10':2,})#S2-E1-N-3-1/S2-E1-N-3-2/S2-E1-N-3-3 has 0
-unit('rotting mutarat',{'S2-E1-N-3-2':2,'S2-E1-N-3-3':5,'S2-E1-N-3-4':3,'S2-E1-N-3-5':3,'S2-E1-N-3-6':8,'S2-E1-N-3-7':6,'S2-E1-N-3-9':6,'S2-E1-N-3-10':6}) #S2-E1-N-3-8 has 0
-unit('giant mutarat',{'S2-E1-N-3-4':3,'S2-E1-N-3-5':1,'S2-E1-N-3-7':5,'S2-E1-N-3-9':5,'S2-E1-N-3-10':5})#S2-E1-N-3-2/S2-E1-N-3-3/S2-E1-N-3-6/S2-E1-N-3-8 has 0
+unit('warrat',{'S2-E1-N-3-1':6,'S2-E1-N-3-2':6,'S2-E1-N-3-3':4,'S2-E1-N-3-6':10,'S2-E1-N-3-8':8})
+unit('huntrat',{'S2-E1-N-3-1':5,'S2-E1-N-3-2':2,'S2-E1-N-3-4':2,'S2-E1-N-3-5':2,'S2-E1-N-3-6':6})
+unit('bigrat',{'S2-E1-N-3-5':3,'S2-E1-N-3-7':1,'S2-E1-N-3-8':10,'S2-E1-N-3-9':4,'S2-E1-N-3-10':5})
+unit('bombrat',{'S2-E1-N-3-6':5,'S2-E1-N-3-8':6,'S2-E1-N-3-9':3,'S2-E1-N-3-10':2,})
+unit('rotting mutarat',{'S2-E1-N-3-2':2,'S2-E1-N-3-3':5,'S2-E1-N-3-4':3,'S2-E1-N-3-5':3,'S2-E1-N-3-6':8,'S2-E1-N-3-7':6,'S2-E1-N-3-9':6,'S2-E1-N-3-10':6})
+unit('giant mutarat',{'S2-E1-N-3-4':3,'S2-E1-N-3-5':1,'S2-E1-N-3-7':5,'S2-E1-N-3-9':5,'S2-E1-N-3-10':5})
 unit('poisonous spore',{'S2-E1-N-3-2':3,'S2-E1-N-3-3':5,'S2-E1-N-3-4':3,'S2-E1-N-3-5':3,'S2-E1-N-3-6':8,'S2-E1-N-3-7':6,'S2-E1-N-3-9':6,'S2-E1-N-3-10':6})
 
 
@@ -522,20 +522,7 @@ class quest(object):
             as_gem+=value.as_gem
         self.as_gem=round(as_gem,2)
         self.worthness=as_gem/self.cost
-
-##        if not is_challenge_mode(self.stage) and self.as_gem<=2:
-##            self.tier='normal'
-##        elif self.as_gem<=6 and self.cost<=1:
-##            self.tier='rare'
-##        elif self.as_gem<=9:
-##            self.tier='epic'
-##        elif self.as_gem<=12:
-##            self.tier='legendary'
-##        else:
-##            self.tier='undefined'
     def _str_builder(self):
-##        yield 'Tier: '
-##        yield self.tier
         yield '<div class=\'quest_box\'>'
         yield '<div class=\'quest_box_i1\'>'
         yield 'Type: '
@@ -576,25 +563,6 @@ class quest(object):
         yield '</ul>'
         yield '</div>'
         yield '</div>'
-##        yield '\nType: '
-##        yield str(self.length)
-##        yield '\nStage: '
-##        yield str(self.stage)
-##        yield '\nMinimum runs: '
-##        yield str(self.clears)
-##        yield '\nWorthness: '
-##        yield str(int(self.worthness*100))+'%'
-##        yield '\nRequiments:'
-##        yield ' (%s)'%self.cost
-##        for value in self.requiment:
-##            yield '\n    '
-##            yield str(value)
-##        yield '\nRewards:'
-##        yield ' (%s)'%self.as_gem
-##        for value in self.reward:
-##            yield '\n    '
-##            yield str(value)
-
     def __str__(self):
         return ''.join(self._str_builder())
 
@@ -686,7 +654,6 @@ class stageview():
                 t=v.stage[short]
                 units.append(unit_order(v.name.title(),v.boss,t))
                 total+=t
-        #stageview.all.append(self)
         self.total=total
         if stage.popularity>4999:
             self.popularity='?'
@@ -713,17 +680,6 @@ class stageview():
         yield '</tbody></table>'
     def __str__(self):
         return ''.join(self._str_builder())
-
-#stageview.all=[]
-#for lv in stage.all.values():
-#    if len(lv.stage)==1:
-#        stageview(lv)
-
-def printall():
-    for v in quests:
-        print(v)
-        print()
-
 class simple_order():
     def __init__(self,name,number):
         self.name=name
@@ -749,19 +705,6 @@ def gemcosts():
         yield from (str(v) for v in sorted(simple_order(*args) for args in reward._costs.items()))
         yield '</tbody></table>'
     return ''.join(_builder())
-
-##tiernames=[]
-##
-##class lendict(dict):
-##    def __repr__(self):
-##        return it_con(('%s:%s'%(k,len(v)) for k,v in self.items()),start='dict{',end='}')
-##    __str__=__repr__
-##    
-##def tierize():
-##    re=lendict(tuple((name,list()) for name in ('normal','rare','epic','legendary','undefined')))
-##    for value in quest.all:
-##        re[value.tier].append(value)
-##    return re
 
 stagecut={}
 for v in stage.all.values():
