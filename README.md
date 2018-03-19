@@ -1,3 +1,13 @@
-The HTML file doesnt needs internet, it uses built in base64 images.
+About the HTML file:
+Doesnt needs internet, it uses built in base64 images.
+It is 1200px width, so it doesnt prefers mobile devices.
+It has scrollbar styling in css, what is not supported by some browsers. (for example: Mozilla)
+It uses js, so please turn it on, or you will see only a white screen.
 
-For running the code what generates a new file, you need python 3.6 or newer version and the Pillow package too.
+
+About the code:
+It generates the HTML file.
+
+Requiments:
+  Python 3.6 (or newer)
+  Pillow
