@@ -859,7 +859,7 @@ def createdocument():
     write('.index_page .mimiarea{display: block; float: right; width: 320px;height: calc(100vh - 54px);overflow: auto;}')
     write('.index_page .mimiarea .mimi{color: #3a3a3a;border: solid;border-radius: 8px;border-color: #ab9269;}')
     write('.index_page .mimiarea .mimi-box{width: calc(100% - 8px);margin-bottom: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}')
-    write('.index_page .atamaarea{width: calc(100% - 230px);height: calc(100vh - 54px);overflow: auto;}')
+    write('.index_page .atamaarea{width: calc(100% - 340px);height: calc(100vh - 54px);overflow: auto;}')
     write('.index_page .atamaarea .atama{padding: 10px;width: calc(100% - 36px);}')
     #page2
     write('''.stage_page{display: flex;}''')
