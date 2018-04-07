@@ -1103,13 +1103,6 @@ quest(repeat,
       reward('lucky-box',1),)
 
 quest(repeat,
-      requiment('elite goblin warrior',12),
-      requiment('3-chain',30),
-      reward('gold',4000),
-      reward('honor',650),
-      reward('dust',30),)
-
-quest(repeat,
       requiment('artificial god avenir',3),
       requiment('1-chain',30),
       reward('gold',4000),
