@@ -228,6 +228,42 @@ class stage(req_base):
         self.note=note
     def __hash__(self):
         return id(self)
+    def __st__(self,other):
+        sv=list.__getitem__(self.stage,0)
+        ov=list.__getitem__(other.stage,0)
+        if len(sv)==len(ov):
+            return sv<ov
+        elif len(sv)<len(ov):
+            return True
+        return False
+    def __se__(self,other):
+        sv=list.__getitem__(self.stage,0)
+        ov=list.__getitem__(other.stage,0)
+        if len(sv)==len(ov):
+            return sv<=ov
+        elif len(sv)<len(ov):
+            return True
+        return False
+    def __eq__(self,other):
+        sv=list.__getitem__(self.stage,0)
+        ov=list.__getitem__(other.stage,0)
+        return sv==ov
+    def __ge__(self,other):
+        sv=list.__getitem__(self.stage,0)
+        ov=list.__getitem__(other.stage,0)
+        if len(sv)==len(ov):
+            return sv>=ov
+        elif len(sv)>len(ov):
+            return True
+        return False
+    def __gt__(self,other):
+        sv=list.__getitem__(self.stage,0)
+        ov=list.__getitem__(other.stage,0)
+        if len(sv)==len(ov):
+            return sv>ov
+        elif len(sv)>len(ov):
+            return True
+        return False
 
 stage('to the hyro forest',stagedict('S2-E1-N-1-1'),12)
 stage('in search of voices',stagedict('S2-E1-N-1-2'),14)
@@ -832,7 +868,7 @@ class _cl(list):
                 if x not in self:
                     add(x)
 by_chapters={x:_cl(y.stage for y in stage.all.values() if is_chapter(y.stage,x)) for x in chapter_metas}
-by_chapters_ns={x:list(set(y for y in stage.all.values() if is_chapter(y.stage,x))) for x in chapter_metas}
+by_chapters_ns={x:sorted(set(y for y in stage.all.values() if is_chapter(y.stage,x))) for x in chapter_metas}
 popularities={list.__getitem__(y.stage,0):y.popularity for y in stage.all.values() if len(y.stage)==1}
 quest_type_metas=list(v.__name__ for v in quest_types)
 quest_type_names=list(str.capitalize(v) for v in quest_type_metas)
