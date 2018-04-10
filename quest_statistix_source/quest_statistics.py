@@ -293,7 +293,7 @@ stage('defending the village',stagedict('S2-E1-N-3-6'),38)
 stage('a new companion',stagedict('S2-E1-N-3-7'),19)
 stage('echoes in the void',stagedict('S2-E1-N-3-8'),25)
 stage("the rat's secret",stagedict('S2-E1-N-3-9'),25)
-stage('lord of the sewern',stagedict('S2-E1-N-3-10'),25)
+stage('lord of the sewers',stagedict('S2-E1-N-3-10'),25)
 
 stage('capturing the palace',stagedict('S2-E1-N-4-1'),7)
 stage('light of deceit',stagedict('S2-E1-N-4-2'),12)
@@ -1372,7 +1372,7 @@ quest(request,
       reward('iron',500),)
 
 quest(emergency,
-      requiment('lord of the sewern',3),
+      requiment('lord of the sewers',3),
       reward('gold',48000),
       reward('honor',2600),
       reward('iron',1800),
