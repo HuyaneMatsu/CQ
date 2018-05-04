@@ -1,5 +1,3 @@
-Matsu quited, beause EU players will get banned at the end of the month :'(
-_________________________
 You can download the QuestStatistic by opening:
 
 https://raw.githubusercontent.com/HuyaneMatsu/CQ/master/quest_statistix.html
@@ -15,3 +13,5 @@ Doesnt need internet, it uses built in base64 images. It is 1200px width, so it 
 About the code: It generates the HTML file.
 
 Requiments: Python 3.6 (or newer), Pillow.
+_________________________
+Matsu quited, beause EU players will get banned at the end of the month :'(
