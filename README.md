@@ -1,3 +1,5 @@
+Matsu quited, beause EU players will get banned at the end of the month :'(
+_________________________
 You can download the QuestStatistic by opening:
 
 https://raw.githubusercontent.com/HuyaneMatsu/CQ/master/quest_statistix.html
