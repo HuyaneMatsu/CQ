@@ -14,4 +14,4 @@ About the code: It generates the HTML file.
 
 Requiments: Python 3.6 (or newer), Pillow.
 _________________________
-Matsu quited, beause EU players will get banned at the end of the month :'(
+Matsu quited, because EU players got banned.
